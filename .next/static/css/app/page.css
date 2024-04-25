@@ -1,0 +1,284 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!../node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/page.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************/
+@media only screen and (max-width: 768px) {
+  .page_logo__7fc9l {
+      width: 100%; /* Reduz ou ajusta a largura para telas menores */
+      justify-content: center; /* Centraliza o logo se necessário */
+  }
+
+  .page_navBar__YFHxz {
+      width: 100%; /* Ajusta a largura da barra de navegação */
+      flex-direction: column; /* Organiza os itens da barra de navegação verticalmente */
+  }
+
+  .page_bLogin__m64UJ {
+      width: 100%; /* Ajusta a largura do botão para preencher o espaço disponível */
+  }
+
+  .page_container__aoG4z, .page_backgroundContainer__D_RQq {
+      height: auto; /* Ajusta a altura dos containers para ser automática */
+      flex-direction: column; /* Organiza os elementos verticalmente */
+  }
+
+  .page_caixa__Vqgs_, .page_caixaTitulo__DQvmM {
+      width: 90%; /* Ajusta a largura para uma porcentagem da tela */
+      left: 5%; /* Centraliza a caixa */
+      top: 50%; /* Ajusta a posição vertical */
+  }
+}
+
+/*Header*/
+.page_header__kVzhN{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  min-height: 90px;
+  padding: 5px 29px 1px 20px;
+}
+
+
+/*Icon*/
+.page_icon__AYuK3{
+ width: 65px; 
+ height: 50px;
+ margin-right: 20px;
+ margin-left: 10px;
+}
+/*fim Icon*/
+
+.page_logo__7fc9l{
+  width: 600px;
+  display: flex;
+  align-items: center;
+}
+
+/*txt*/
+
+.page_txtLog__L_XRp{
+  font-weight: 800;
+ font-size: 35px;
+}
+
+/*fim txt*/
+
+/*botoes*/
+
+.page_navBar__YFHxz{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+.page_link__36MaQ{   
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0px 18px 0px 18px;;
+  font-weight: 600;
+}
+
+
+
+.page_bLogin__m64UJ{
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  background-color: #6ba596;
+  cursor: pointer;
+  width: 700px;
+  height: 40px;
+  font-size: 18px;
+  margin-left: 25px;
+  padding: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page_bLogin__m64UJ:visited{
+  text-decoration: none;
+}
+
+.page_bLogin__m64UJ:hover{
+  background-color: #3b5d54;
+  color: white;
+}
+
+.page_link__36MaQ:hover{
+  text-decoration: underline;
+}
+
+.page_container__aoG4z{
+  display: flex;
+  height: 900px;
+  width: 100%;
+  background-color: black;
+  align-items: end;
+  justify-content: end;
+}
+
+.page_backgroundContainer__D_RQq{
+  height: 900px;
+  width: 100%;
+  position: absolute;
+
+}
+
+.page_logoContainer__S8bF9{
+  position: relative;
+  width: 420px;
+  height: 170px;
+  margin-right: 50px;
+}
+
+.page_main__GlU4n{
+  height: 800px;
+}
+
+
+
+.page_caixa__Vqgs_{
+  position: absolute; /* Posição absoluta em relação ao contêiner pai */
+  top: 56%; /* Ajusta a posição verticalmente */
+  left: 150px; /* Ajusta a posição horizontalmente */
+  transform: translateY(-50%); /* Centraliza a forma geométrica */
+  background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo da forma geométrica */
+  width: 500px; /* Largura da forma geométrica */
+  height: 600px; /* Altura da forma geométrica */
+  border-radius: 45px; /* Borda arredondada */
+  display: flex; /* Para centralizar o texto verticalmente */
+  justify-content: center; /* Para centralizar o texto horizontalmente */
+  align-items: center; /* Para centralizar o texto verticalmente */
+}
+
+.page_caixaText__9Slz5 {
+  color: black; /* Cor do texto */
+  font-size: 25px; /* Tamanho da fonte */
+  font-weight: 500;  /*Peso da fonte*/
+  padding: 8px;
+  text-align: center;
+}
+
+.page_caixaTitulo__DQvmM {
+  position: absolute;
+  top: 28%; /* Posicionamento da nova forma */
+  left: 150px; /* Posicionamento da nova forma */
+  transform: translateY(-50%);
+  background-color: #6ba596; /* Cor de fundo da nova forma */
+  width: 500px; /* Largura da nova forma */
+  height: 80px; /* Altura da nova forma */
+  border-radius: 60px; /* Borda arredondada */
+  display: flex; /* Para centralizar o texto verticalmente */
+  justify-content: center; /* Para centralizar o texto horizontalmente */
+  align-items: center; /* Para centralizar o texto verticalmente */
+}  
+
+.page_titleText__1_Vp8 {
+  color: black;
+  font-size: 30px; /* Tamanho da fonte */
+  font-weight:800;
+}
+
+.page_ajuda__DNX4V{
+  background-color: #a8ddcf;
+  margin-top: 40px;
+  padding:50px ;
+  align-items: center;
+}
+
+.page_textAjuda__dFhEP{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.page_caixaContainer__7q1io{
+  display: flex;
+}
+
+.page_caixa1__n85er{
+  background-color: white;
+  margin-top: 40px;
+  margin-left: 110px;
+  border-radius: 45px;
+  padding:30px ;
+  align-items: center;
+  width: 400px;
+  height: 200px;
+  flex: 1 1;
+  margin-right: 400px;
+}
+
+.page_titleBox1__xYpEE {
+  color: black; /* Cor do texto */
+  font-size: 33px; /* Tamanho da fonte */
+  font-weight: 500;  /*Peso da fonte*/
+  padding: 8px;
+  text-align: center;
+}
+
+.page_textBox1__9kzfj {
+  color: black; /* Cor do texto */
+  font-size: 24px; /* Tamanho da fonte */
+  font-weight: 300;  /*Peso da fonte*/
+  margin-top: 26px;
+  text-align: left;
+  text-align: center;
+}
+
+
+.page_caixa2__Miw_S{
+  position: relative;
+  background-color: white;
+  margin-top: 40px;
+  margin-left: 110px;
+  border-radius: 45px;
+  padding:30px ;
+  align-items: center;
+  width: 500px;
+  height: 200px;
+  flex:1 1;
+  margin-right: 110px;
+}
+
+.page_titleBox2__iuroW {
+  color: black; /* Cor do texto */
+  font-size: 33px; /* Tamanho da fonte */
+  font-weight: 500;  /*Peso da fonte*/
+
+  padding: 8px;
+  text-align: center;
+}
+
+.page_textBox2__EpaVc {
+  color: black; /* Cor do texto */
+  font-size: 24px; /* Tamanho da fonte */
+  font-weight: 300;  /*Peso da fonte*/
+  margin-top: 26px;
+  text-align: left;
+  text-align: center;
+}
+
+.page_butDuvidas__gvbIf{
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  background-color: #6ba596;
+  cursor: pointer;
+  width: 500px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-left: 15px;
+  
+}
+
+.page_butDuvidas__gvbIf:hover{
+  background-color: #3b5d54;
+  color: white;
+}
