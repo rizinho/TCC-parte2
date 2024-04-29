@@ -12,11 +12,11 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/Cadastro/page": [
+    "/CadastroCli/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/Cadastro/page.js",
-      "static/css/app/Cadastro/page.css"
+      "static/css/app/CadastroCli/page.css",
+      "static/chunks/app/CadastroCli/page.js"
     ]
   }
 }

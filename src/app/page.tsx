@@ -20,7 +20,7 @@ export default function Home() {
             <button className={styles.link}>SAC</button>
             <button className={styles.link}>Configurações</button>
             <button className={styles.bLogin}>Login</button>
-            <Link href="/Cadastro" className={styles.bLogin}>Cadastro</Link>
+            <Link href="/CadastroCli" className={styles.bLogin}>Cadastro</Link>
           </div>
         </div>
 
