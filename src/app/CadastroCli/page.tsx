@@ -1,4 +1,6 @@
-
+'use client'
+ 
+import { useState } from 'react'
 
 import styles from "./cadastro.module.css"
 import Image from "next/image";
@@ -6,13 +8,20 @@ import Link from "next/link"
 
 export default function Cadastro() {
 
+  const [nomeCompleto, setNomeCompleto] = useState('');
+  const [email, setEmail] = useState('');
+  const [cpf, setCpf] = useState('');
+  const [telefone, setTelefone] = useState('');
+  const [cidade, setCidade] = useState('');
+  const [estado, setEstado] = useState('');
+  const [dataNascimento, setDataNascimento] = useState('');
+  const [genero, setGenero] = useState('');
 
 
   return(
     
-    
-    <form className={styles.main}>
-
+    <div style={{ backgroundColor: '#72b6a4', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      <header>
       <div className={styles.header}>
           <div className={styles.logo}>
             <Image
@@ -24,111 +33,78 @@ export default function Cadastro() {
             />
             <h1 className={styles.txtLog}>Consult Doctor</h1>
           </div>
+         
         </div>
-       
-      <h1> nome completo </h1>
+      </header>
+      <div style={{ flex: '1', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <form style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '40px', borderRadius: '10px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', maxWidth: '400px', width: '100%' }}>
 
-      <input className={styles.inf}
-             type="text"
-             value="Nome completo"
-             id="nome"
-             
-             /> <br/>
-      <input className={styles.inf}
-             type="text"
-             value="E-mail"
-             id="e-mail"
-             /> <br/>
-      <input className={styles.inf}
-             type="text"
-             value="Senha"
-             id="senha"
-             /> <br/>             
-      <input className={styles.inf}
-             type="text"
-             value="CPF"
-             id="cpf"
-             /> <br/>
-      <input className={styles.inf}
-             type="text"
-             value="Numero de telefone"
-             id="numero de telefone"
-             /> <br/>
-      <input className={styles.inf}
-             type="text"
-             value="Cidade"
-             id="cidade"
-             /> <br/>
-      <input className={styles.inf}
-             type="text"
-             value="Estado"
-             id="estado"
-             /> <br/>
+          <div>
+            <label>Nome Completo:</label>
+            <input type="text" value={nomeCompleto} onChange={(e) => setNomeCompleto(e.target.value)} />
+          </div>
 
-      <h1>Data de Nascimento</h1>
+          <div>
+            <label>Email:</label>
+            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          </div>
 
-      <label>Dia:</label>
-            <select>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-              <option value="6">6</option>
-              <option value="7">7</option>
-              <option value="8">8</option>
-              <option value="9">9</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-              <option value="13">13</option>
-              <option value="14">14</option>
-              <option value="15">15</option>
-              <option value="16">16</option>
-              <option value="17">17</option>
-              <option value="18">18</option>
-              <option value="19">19</option>
-              <option value="20">20</option>
-              <option value="21">21</option>
-              <option value="22">22</option>
-              <option value="23">23</option>
-              <option value="24">24</option>
-              <option value="25">25</option>
-              <option value="26">26</option>
-              <option value="27">27</option>
-              <option value="28">28</option>
-              <option value="29">29</option>
-              <option value="30">30</option>
-              <option value="31">31</option>
-            </select>  
+          <div>
+            <label>Senha:</label>
+            <input type="password" value={email} onChange={(e) => setEmail(e.target.value)} />
+          </div>
 
-      <label>Mês:</label>
-            <select>
-              <option value="Janeiro">Janeiro</option>
-              <option value="Fevereiro">Fevereiro</option>
-              <option value="Março">Março</option>
-              <option value="Abril">Abril</option>
-              <option value="Maio">Maio</option>
-              <option value="Junho">Junho</option>
-              <option value="Julho">Julho</option>
-              <option value="Agosto">Agosto</option>
-              <option value="Setembro">Setembro</option>
-              <option value="Outubro">Outubro</option>
-              <option value="Novembro">Novembro</option>
-              <option value="Dezembro">Dezembro</option>
+          <div>
+            <label>CPF:</label>
+            <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} />
+          </div>
+
+          <div>
+            <label>Telefone:</label>
+            <input type="tel" value={telefone} onChange={(e) => setTelefone(e.target.value)} />
+          </div>
+
+          <div>
+            <label>Cidade:</label>
+            <input type="text" value={cidade} onChange={(e) => setCidade(e.target.value)} />
+          </div>
+
+          <div>
+            <label>Estado:</label>
+            <select value={estado} onChange={(e) => setEstado(e.target.value)}>
+              <option value="">Selecione o Estado</option>
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="MG">Minas Gerais</option>
+              {/* Adicione mais estados conforme necessário */}
             </select>
-      <label>Ano:</label>
+          </div>
 
-      <input className={styles.inf}
-             type="text"
-             id="ano"
-             />       
+          <div>
+            <label>Data de Nascimento:</label>
+            <input type="date" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} />
+          </div>
 
-    <br/>
+          <div>
+            <label>Gênero:</label>
+            <select value={genero} onChange={(e) => setGenero(e.target.value)}>
+              <option value="">Selecione o Gênero</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
 
-      <Link href="/">Voltar</Link>
-    </form>
+          <button type="submit">Cadastrar</button>
+          <Link href="/" className={styles.botVoltar}>Voltar</Link>
 
-    
+        </form>
+      </div>
+
+      <footer style={{ backgroundColor: '#fff', padding: '20px', textAlign: 'center' }}>
+        &copy; 2024 ConsultDoctor.com - Todos os direitos reservados
+      </footer>
+
+    </div>
   );
-}
+};
