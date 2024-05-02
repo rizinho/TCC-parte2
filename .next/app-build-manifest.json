@@ -15,8 +15,8 @@
     "/CadastroCli/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/CadastroCli/page.js",
-      "static/css/app/CadastroCli/page.css"
+      "static/css/app/CadastroCli/page.css",
+      "static/chunks/app/CadastroCli/page.js"
     ]
   }
 }

@@ -10,6 +10,7 @@ export default function Cadastro() {
 
   const [nomeCompleto, setNomeCompleto] = useState('');
   const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
   const [cpf, setCpf] = useState('');
   const [telefone, setTelefone] = useState('');
   const [cidade, setCidade] = useState('');
@@ -40,44 +41,48 @@ export default function Cadastro() {
         <form style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '40px', borderRadius: '10px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', maxWidth: '400px', width: '100%' }}>
 
           <div>
-            <label>Nome Completo:</label>
-            <input type="text" value={nomeCompleto} onChange={(e) => setNomeCompleto(e.target.value)} />
+            <input className={styles.inp}
+                   type='text' value={nomeCompleto} 
+                   placeholder='Nome Completo:' 
+                   onChange={(e) => setNomeCompleto(e.target.value)}
+                    />
           </div>
 
           <div>
-            <label>Email:</label>
-            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+            <input className={styles.inp}
+                   type="email" value={email} 
+                   placeholder='E-mail:' 
+                   onChange={(e) => setEmail(e.target.value)} 
+                   />
           </div>
 
           <div>
-            <label>Senha:</label>
-            <input type="password" value={email} onChange={(e) => setEmail(e.target.value)} />
+
+            <input className={styles.inp}
+                   type="password" value={senha} 
+                   placeholder='Senha:' 
+                   onChange={(e) => setSenha(e.target.value)} 
+                   />
           </div>
 
           <div>
-            <label>CPF:</label>
-            <input type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} />
+            <input className={styles.inp}
+                   type="text" value={cpf} 
+                   placeholder='CPF:' 
+                   onChange={(e) => setCpf(e.target.value)} 
+                   />
           </div>
 
           <div>
-            <label>Telefone:</label>
-            <input type="tel" value={telefone} onChange={(e) => setTelefone(e.target.value)} />
+              <input className={styles.inp}
+                     type="tel" value={telefone} 
+                     placeholder='Telefone:' 
+                     onChange={(e) => setTelefone(e.target.value)} />
           </div>
 
           <div>
-            <label>Cidade:</label>
-            <input type="text" value={cidade} onChange={(e) => setCidade(e.target.value)} />
-          </div>
-
-          <div>
-            <label>Estado:</label>
-            <select value={estado} onChange={(e) => setEstado(e.target.value)}>
-              <option value="">Selecione o Estado</option>
-              <option value="SP">São Paulo</option>
-              <option value="RJ">Rio de Janeiro</option>
-              <option value="MG">Minas Gerais</option>
-              {/* Adicione mais estados conforme necessário */}
-            </select>
+            <input type="text" value={cidade} placeholder='Cidade:' onChange={(e) => setCidade(e.target.value)} />
+            <input type="text" value={estado} placeholder='Estado:' onChange={(e) => setEstado(e.target.value)} />
           </div>
 
           <div>

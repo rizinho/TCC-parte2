@@ -1,5 +1,5 @@
 .main{
-  flex: 1;
+  background-Color: '#72b6a4'; min-Height: '100vh'; display: 'flex'; flexDirection: 'column'
 }
 
 .header{
@@ -39,6 +39,7 @@
 
   /* Input */
 
-  .info{
-    align-items: center;
+  .inp{
+    margin: 10px;
+    padding-right: 30px;
   }
