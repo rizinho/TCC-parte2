@@ -37,8 +37,8 @@ export default function Cadastro() {
          
         </div>
       </header>
-      <div style={{ flex: '1', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <form style={{ backgroundColor: 'rgba(255, 255, 255, 0.8)', padding: '40px', borderRadius: '10px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)', maxWidth: '400px', width: '100%' }}>
+      <div className={styles.form}>
+        <form  className={styles.form1}>
 
           <div>
             <input className={styles.inp}
@@ -80,18 +80,17 @@ export default function Cadastro() {
                      onChange={(e) => setTelefone(e.target.value)} />
           </div>
 
-          <div>
-            <input type="text" value={cidade} placeholder='Cidade:' onChange={(e) => setCidade(e.target.value)} />
-            <input type="text" value={estado} placeholder='Estado:' onChange={(e) => setEstado(e.target.value)} />
+          <div >
+            <input className={styles.inp1} type="text" value={cidade} placeholder='Cidade:' onChange={(e) => setCidade(e.target.value)} />
+            <input className={styles.inp2} type="text" value={estado} placeholder='Estado:' onChange={(e) => setEstado(e.target.value)} />
           </div>
 
+
           <div>
-            <label>Data de Nascimento:</label>
             <input type="date" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} />
           </div>
 
           <div>
-            <label>Gênero:</label>
             <select value={genero} onChange={(e) => setGenero(e.target.value)}>
               <option value="">Selecione o Gênero</option>
               <option value="masculino">Masculino</option>
@@ -101,12 +100,12 @@ export default function Cadastro() {
           </div>
 
           <button type="submit">Cadastrar</button>
-          <Link href="/" className={styles.botVoltar}>Voltar</Link>
-
+          <Link href="/" className={styles.botVoltar}>Voltar</Link> 
+        
         </form>
       </div>
 
-      <footer style={{ backgroundColor: '#fff', padding: '20px', textAlign: 'center' }}>
+      <footer className={styles.roda}>
         &copy; 2024 ConsultDoctor.com - Todos os direitos reservados
       </footer>
 

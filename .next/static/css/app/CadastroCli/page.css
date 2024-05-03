@@ -37,12 +37,57 @@
   
   .cadastro_txtLog__vVZD1{
     font-weight: 800;
-   font-size: 35px;
+    font-size: 35px;
+  }
+
+  /* form */
+
+  .cadastro_form__65RIu{
+    flex: 1 1;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .cadastro_form1__lXxG1{ 
+    border-radius: 10px; 
+    width: 600px;
   }
 
   /* Input */
 
   .cadastro_inp__hdt3o{
     margin: 10px;
-    padding-right: 30px;
+    text-align: left;
+    width: 572px;
+    height: 40px;
+    
+    
+  }
+
+  .cadastro_inp1__0CV3_{
+    margin: 10px;
+    margin-left: 10px;    
+    width: 250px;
+    height: 40px;    
+    text-align: left;
+
+  }
+
+  .cadastro_inp2__T_zYd{    
+    margin-left: 53px;    
+    margin-right: 10px;
+    width: 250px;
+    height: 40px;    
+    text-align: left;
+
+  }
+
+
+  /* footer */
+
+  .cadastro_roda__wUn6e{
+    background-color:white;
+    padding: 20px; 
+    text-align: center; 
   }
