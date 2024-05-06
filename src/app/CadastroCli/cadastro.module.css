@@ -58,26 +58,79 @@
     text-align: left;
     width: 572px;
     height: 40px;
+    border-radius: 10px;
+    border:none;
     
     
   }
 
   .inp1{
-    margin: 10px;
-    margin-left: 10px;    
+    margin:10px;
+    margin-right: 68px;
     width: 250px;
     height: 40px;    
     text-align: left;
+    border-radius: 10px;
+    border:none;
 
   }
 
   .inp2{    
-    margin-left: 53px;    
-    margin-right: 10px;
+     
     width: 250px;
     height: 40px;    
     text-align: left;
+    border-radius: 10px;
+    border:none;
+  }
 
+  .date{
+    margin: 10px;
+    margin-left: 10px;    
+    width: 252px;
+    height: 40px;    
+    text-align: left;
+    border-radius: 10px;
+    border:none;
+    
+  }
+
+  .genero{
+    margin-left: 58px;    
+    margin-right: 10px;
+    width: 255px;
+    height: 40px;    
+    text-align: left;
+    border-radius: 10px;
+    border:none;
+  }
+
+  .cad{
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 198px;
+    margin-top: 30px;
+    padding: 10px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .cad:visited{
+    text-decoration: none;
+  }
+  
+  .cad:hover{
+    background-color: #3b5d54;
+    color: white;
+  }
+  
+  .link:hover{
+    text-decoration: underline;
   }
 
 

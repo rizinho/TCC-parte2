@@ -77,7 +77,8 @@ export default function Cadastro() {
               <input className={styles.inp}
                      type="tel" value={telefone} 
                      placeholder='Telefone:' 
-                     onChange={(e) => setTelefone(e.target.value)} />
+                     onChange={(e) => setTelefone(e.target.value)} 
+                     />
           </div>
 
           <div >
@@ -87,11 +88,12 @@ export default function Cadastro() {
 
 
           <div>
-            <input type="date" value={dataNascimento} onChange={(e) => setDataNascimento(e.target.value)} />
-          </div>
+            <input className={styles.date}
+                   type="date" value={dataNascimento}
+                   onChange={(e) => setDataNascimento(e.target.value)} 
+                   />
 
-          <div>
-            <select value={genero} onChange={(e) => setGenero(e.target.value)}>
+            <select className={styles.genero} value={genero} onChange={(e) => setGenero(e.target.value)}>
               <option value="">Selecione o Gênero</option>
               <option value="masculino">Masculino</option>
               <option value="feminino">Feminino</option>
@@ -99,8 +101,8 @@ export default function Cadastro() {
             </select>
           </div>
 
-          <button type="submit">Cadastrar</button>
-          <Link href="/" className={styles.botVoltar}>Voltar</Link> 
+          <button className={styles.cad} type="submit">Cadastrar</button>
+
         
         </form>
       </div>
