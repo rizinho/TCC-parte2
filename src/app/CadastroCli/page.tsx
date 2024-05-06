@@ -1,5 +1,5 @@
 'use client'
- 
+
 import { useState } from 'react'
 
 import styles from "./cadastro.module.css"
@@ -19,79 +19,85 @@ export default function Cadastro() {
   const [genero, setGenero] = useState('');
 
 
-  return(
-    
-    <div style={{ backgroundColor: '#72b6a4', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+  return (
+
+    <div className={styles.main}>
       <header>
-      <div className={styles.header}>
+        <div className={styles.header}>
           <div className={styles.logo}>
             <Image
-            className={styles.icon}
-            src="/logotcc.png"
-            width={500}
-            height={500}
-            alt="Imagem do logo"
+              className={styles.icon}
+              src="/logotcc.png"
+              width={500}
+              height={500}
+              alt="Imagem do logo"
             />
             <h1 className={styles.txtLog}>Consult Doctor</h1>
           </div>
-         
+
         </div>
       </header>
       <div className={styles.form}>
-        <form  className={styles.form1}>
+        <form className={styles.form1}>
 
           <div>
             <input className={styles.inp}
-                   type='text' value={nomeCompleto} 
-                   placeholder='Nome Completo:' 
-                   onChange={(e) => setNomeCompleto(e.target.value)}
-                    />
+              type='text' value={nomeCompleto}
+              placeholder='Nome Completo:'
+              onChange={(e) => setNomeCompleto(e.target.value)}
+              required
+            />
           </div>
 
           <div>
             <input className={styles.inp}
-                   type="email" value={email} 
-                   placeholder='E-mail:' 
-                   onChange={(e) => setEmail(e.target.value)} 
-                   />
+              type="email" value={email}
+              placeholder='E-mail:'
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
           </div>
 
           <div>
 
             <input className={styles.inp}
-                   type="password" value={senha} 
-                   placeholder='Senha:' 
-                   onChange={(e) => setSenha(e.target.value)} 
-                   />
+              type="password" value={senha}
+              placeholder='Senha:'
+              onChange={(e) => setSenha(e.target.value)}
+              required
+            />
           </div>
 
           <div>
             <input className={styles.inp}
-                   type="text" value={cpf} 
-                   placeholder='CPF:' 
-                   onChange={(e) => setCpf(e.target.value)} 
-                   />
+              type="number" value={cpf}
+              pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+              placeholder='CPF:(Somente Números)'
+              onChange={(e) => setCpf(e.target.value)}
+              required
+            />
           </div>
 
           <div>
-              <input className={styles.inp}
-                     type="tel" value={telefone} 
-                     placeholder='Telefone:' 
-                     onChange={(e) => setTelefone(e.target.value)} 
-                     />
+            <input className={styles.inp}
+              type="tel" value={telefone}
+              placeholder='Telefone:'
+              onChange={(e) => setTelefone(e.target.value)}
+              required
+            />
           </div>
 
           <div >
-            <input className={styles.inp1} type="text" value={cidade} placeholder='Cidade:' onChange={(e) => setCidade(e.target.value)} />
-            <input className={styles.inp2} type="text" value={estado} placeholder='Estado:' onChange={(e) => setEstado(e.target.value)} />
+            <input className={styles.inp1} type="text" value={cidade} placeholder='Cidade:' onChange={(e) => setCidade(e.target.value)} required />
+            <input className={styles.inp2} type="text" value={estado} placeholder='Estado:' onChange={(e) => setEstado(e.target.value)} required />
           </div>
 
 
           <div>
             <input className={styles.date}
-                   type="date" value={dataNascimento}
-                   onChange={(e) => setDataNascimento(e.target.value)} 
-                   />
+              type="date" value={dataNascimento}
+              onChange={(e) => setDataNascimento(e.target.value)}
+            />
 
             <select className={styles.genero} value={genero} onChange={(e) => setGenero(e.target.value)}>
               <option value="">Selecione o Gênero</option>
@@ -103,7 +109,7 @@ export default function Cadastro() {
 
           <button className={styles.cad} type="submit">Cadastrar</button>
 
-        
+
         </form>
       </div>
 

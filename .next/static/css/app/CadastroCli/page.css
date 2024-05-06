@@ -2,11 +2,10 @@
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/CadastroCli/cadastro.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/
 .cadastro_main__38Sdv{
-  background-Color: '#72b6a4'; min-Height: '100vh'; display: 'flex'; flexDirection: 'column'
-}
-
-.cadastro_header__c990F{
-  background-color: white;
+  background-Color: #72b6a4; 
+  min-Height: 100vh; 
+  display: flex; 
+  flex-Direction: column;
 }
 
 .cadastro_header__c990F{
@@ -15,6 +14,7 @@
     justify-content:space-between;
     min-height: 90px;
     padding: 5px 29px 1px 20px;
+    background-color: white;
   }
   
   
@@ -63,8 +63,6 @@
     height: 40px;
     border-radius: 10px;
     border:none;
-    
-    
   }
 
   .cadastro_inp1__0CV3_{
