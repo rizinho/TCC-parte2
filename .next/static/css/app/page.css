@@ -96,9 +96,11 @@
   padding: 10px;
   font-weight: 600;
   text-decoration: none;
+  text-align: center;
 }
 
 .page_bLogin__m64UJ:visited{
+  color: inherit; /* ou outra cor de sua escolha */
   text-decoration: none;
 }
 

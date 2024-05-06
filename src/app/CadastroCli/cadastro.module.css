@@ -92,7 +92,7 @@
     text-align: left;
     border-radius: 10px;
     border:none;
-    
+    cursor: pointer;
   }
 
   .genero{
@@ -103,6 +103,8 @@
     text-align: left;
     border-radius: 10px;
     border:none;
+    cursor: pointer;
+    /* appearance: none; */
   }
 
   .cad{
@@ -128,11 +130,6 @@
     background-color: #3b5d54;
     color: white;
   }
-  
-  .link:hover{
-    text-decoration: underline;
-  }
-
 
   /* footer */
 

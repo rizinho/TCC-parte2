@@ -95,7 +95,7 @@
     text-align: left;
     border-radius: 10px;
     border:none;
-    
+    cursor: pointer;
   }
 
   .cadastro_genero__1NTYU{
@@ -106,6 +106,8 @@
     text-align: left;
     border-radius: 10px;
     border:none;
+    cursor: pointer;
+    /* appearance: none; */
   }
 
   .cadastro_cad__40CrP{
@@ -131,11 +133,6 @@
     background-color: #3b5d54;
     color: white;
   }
-  
-  .cadastro_link__ZLDNF:hover{
-    text-decoration: underline;
-  }
-
 
   /* footer */
 
