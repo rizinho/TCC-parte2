@@ -18,16 +18,26 @@ export default function Login() {
                         />
                         <h1 className={styles.txtLog}>Consult Doctor</h1>
                         <div className={styles.form}>
-                          <form className={styles.form1}>
+                            <form className={styles.form1}>
 
-                            <input className={styles.inp}
-                                   type="text" />
+                                <input className={styles.inp}
+                                    type="text" />
 
-                          </form>
+                            </form>
                         </div>
                     </div>
                 </div>
             </header>
+
+            <div className={styles.form}>
+                <form className={styles.form1}>
+                    <input/>
+                </form>
+            </div>
+
+            <footer className={styles.roda}>
+                &copy; 2024 ConsultDoctor.com - Todos os direitos reservados
+            </footer>
 
         </div>
     )

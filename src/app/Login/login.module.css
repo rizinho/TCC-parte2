@@ -46,11 +46,6 @@
       justify-content: center; 
       align-items: center; 
     }
-  
-    .form1{ 
-      border-radius: 10px; 
-      width: 600px;
-    }
 
     .inp{
         margin: 10px;
@@ -60,3 +55,11 @@
         border-radius: 10px;
         border:none;
       }
+
+        /* footer */
+
+  .roda{
+    background-color:white;
+    padding: 20px; 
+    text-align: center; 
+  }

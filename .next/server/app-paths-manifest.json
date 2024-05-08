@@ -1,6 +1,6 @@
 {
-  "/page": "app/page.js",
   "/CadastroCli/page": "app/CadastroCli/page.js",
   "/Login/page": "app/Login/page.js",
+  "/page": "app/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

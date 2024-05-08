@@ -49,11 +49,6 @@
       justify-content: center; 
       align-items: center; 
     }
-  
-    .login_form1__nIpO5{ 
-      border-radius: 10px; 
-      width: 600px;
-    }
 
     .login_inp__e5u6u{
         margin: 10px;
@@ -63,3 +58,11 @@
         border-radius: 10px;
         border:none;
       }
+
+        /* footer */
+
+  .login_roda__AypWX{
+    background-color:white;
+    padding: 20px; 
+    text-align: center; 
+  }
