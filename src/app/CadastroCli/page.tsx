@@ -2,6 +2,8 @@
 
 import { useState } from 'react'
 
+import { IMaskInput } from "react-imask";
+
 import styles from "./cadastro.module.css"
 import Image from "next/image";
 import Link from "next/link"
@@ -11,15 +13,17 @@ export default function Cadastro() {
   const [nomeCompleto, setNomeCompleto] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
-  const [cpf, setCpf] = useState('');
+  const [cpf, setCpf] = useState();
   const [telefone, setTelefone] = useState('');
   const [cidade, setCidade] = useState('');
   const [estado, setEstado] = useState('');
   const [dataNascimento, setDataNascimento] = useState('');
   const [genero, setGenero] = useState('');
 
+  
 
   return (
+
 
     <div className={styles.main}>
       <header>
@@ -69,22 +73,29 @@ export default function Cadastro() {
           </div>
 
           <div>
-            <input className={styles.inp}
-              type="number" value={cpf}
-              pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-              placeholder='CPF:(Somente Números)'
-              onChange={(e) => setCpf(e.target.value)}
-              required
-            />
+            
+          <IMaskInput className={styles.inp}
+            value={cpf}
+            mask="000.000.000-00"
+            placeholder='CPF:(Somente Números)'
+            onChange={e => setCpf(e.target.value)}
+            required
+          />
+
+
           </div>
 
           <div>
-            <input className={styles.inp}
-              type="tel" value={telefone}
-              placeholder='Telefone:'
-              onChange={(e) => setTelefone(e.target.value)}
-              required
-            />
+
+          <IMaskInput className={styles.inp}
+            value={cpf}
+            mask="(00)00000-0000"
+            placeholder='Celular'
+            onChange={e => setTelefone(e.target.value)}
+            required
+          />
+
+
           </div>
 
           <div >
@@ -120,3 +131,4 @@ export default function Cadastro() {
     </div>
   );
 };
+
