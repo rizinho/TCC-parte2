@@ -4,9 +4,12 @@ import { useState } from 'react';
 
 import { IMaskInput } from "react-imask";
 
+import { useRouter } from 'next/router';
+
 import styles from "./cadastro.module.css";
 import Image from "next/image";
 import Link from "next/link";
+
 
 export default function Cadastro() {
 
@@ -19,6 +22,12 @@ export default function Cadastro() {
   const [estado, setEstado] = useState('');
   const [dataNascimento, setDataNascimento] = useState('');
   const [genero, setGenero] = useState('');
+
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push('/');
+  };
 
   
 
@@ -41,6 +50,9 @@ export default function Cadastro() {
 
         </div>
       </header>
+
+      <h1 className={styles.tit}>FAÇA SEU CADASTRO</h1>
+      
       <div className={styles.form}>
         <form className={styles.form1}>
 
@@ -121,8 +133,7 @@ export default function Cadastro() {
             </select>
           </div>
 
-          <button className={styles.cad} type="submit">Cadastrar</button>
-
+          <button className={styles.cad} type="submit" onChange={(e) => hendleClick}>Cadastrar</button>
 
         </form>
       </div>

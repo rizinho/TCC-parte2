@@ -28,7 +28,7 @@ export default function Login() {
                 </div>
             </header>
 
-            <h1 className={styles.tit}>FAÇA LOGIN</h1>
+            <h1 className={styles.tit}>FAÇA SEU LOGIN</h1>
 
             <div className={styles.form}>
                 <form className={styles.form1}>

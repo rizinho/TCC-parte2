@@ -41,6 +41,15 @@
   font-size: 35px;
 }
 
+.cadastro_tit__Bibug{
+  margin-top: 90px;
+  font-weight: 800;
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Gill Sans', sans-serif;
+  color: #d8e6e2;
+}
+
 /* form */
 
 .cadastro_form__65RIu {
@@ -48,6 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 90px;
 }
 
 .cadastro_form1__lXxG1 {
@@ -126,6 +136,7 @@
 }
 
 .cadastro_cad__40CrP:visited {
+  color: inherit;
   text-decoration: none;
 }
 
