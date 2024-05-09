@@ -1,8 +1,15 @@
+'use client'
+
+import {useState} from 'react'
 
 import styles from "./login.module.css"
 import Image from "next/image";
 
 export default function Login() {
+
+    const[email, setEmail] = useState('');
+    const[senha, setSenha] = useState('');
+
     return (
         <div className={styles.main}>
 
@@ -17,21 +24,29 @@ export default function Login() {
                             alt="Imagem do logo"
                         />
                         <h1 className={styles.txtLog}>Consult Doctor</h1>
-                        <div className={styles.form}>
-                            <form className={styles.form1}>
-
-                                <input className={styles.inp}
-                                    type="text" />
-
-                            </form>
-                        </div>
                     </div>
                 </div>
             </header>
 
+            <h1 className={styles.tit}>FAÇA LOGIN</h1>
+
             <div className={styles.form}>
                 <form className={styles.form1}>
-                    <input/>
+
+                    <input className={styles.inp}
+                           type="email" value={email}
+                           placeholder='E-mail:'
+                           onChange={(e) => setEmail(e.target.value)}
+                           required
+                    />
+                    <input className={styles.inp}
+                           type="password" value={senha}
+                           placeholder='Senha:'
+                           onChange={(e) => setSenha(e.target.value)}
+                           required
+                    />
+                  <button className={styles.cad} type="submit">Entrar</button>
+
                 </form>
             </div>
 

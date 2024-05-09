@@ -1,142 +1,143 @@
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./src/app/CadastroCli/cadastro.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/
-.cadastro_main__38Sdv{
-  background-Color: #72b6a4; 
-  min-Height: 100vh; 
-  display: flex; 
+.cadastro_main__38Sdv {
+  background-Color: #72b6a4;
+  min-Height: 100vh;
+  display: flex;
   flex-Direction: column;
 }
 
-.cadastro_header__c990F{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    min-height: 90px;
-    padding: 5px 29px 1px 20px;
-    background-color: white;
-  }
-  
-  
-  /*Icon*/
-  .cadastro_icon__ptPle{
-   width: 65px; 
-   height: 50px;
-   margin-right: 20px;
-   margin-left: 10px;
-  }
-  /*fim Icon*/
-  
-  .cadastro_logo__4Tplo{
-    width: 600px;
-    display: flex;
-    align-items: center;
-  }
-  
-  /*txt*/
-  
-  .cadastro_txtLog__vVZD1{
-    font-weight: 800;
-    font-size: 35px;
-  }
+.cadastro_header__c990F {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90px;
+  padding: 5px 29px 1px 20px;
+  background-color: white;
+}
 
-  /* form */
 
-  .cadastro_form__65RIu{
-    flex: 1 1;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-  }
+/*Icon*/
+.cadastro_icon__ptPle {
+  width: 65px;
+  height: 50px;
+  margin-right: 20px;
+  margin-left: 10px;
+}
 
-  /* .form1{ 
-    border-radius: 10px; 
-    width: 600px;
-  } */
+/*fim Icon*/
 
-  /* Input */
+.cadastro_logo__4Tplo {
+  width: 600px;
+  display: flex;
+  align-items: center;
+}
 
-  .cadastro_inp__hdt3o{
-    margin: 10px;
-    text-align: left;
-    width: 572px;
-    height: 40px;
-    border-radius: 10px;
-    border:none;
-  }
+/*txt*/
 
-  .cadastro_inp1__0CV3_{
-    margin:10px;
-    margin-right: 68px;
-    width: 250px;
-    height: 40px;    
-    text-align: left;
-    border-radius: 10px;
-    border:none;
+.cadastro_txtLog__vVZD1 {
+  font-weight: 800;
+  font-size: 35px;
+}
 
-  }
+/* form */
 
-  .cadastro_inp2__T_zYd{    
-     
-    width: 250px;
-    height: 40px;    
-    text-align: left;
-    border-radius: 10px;
-    border:none;
-  }
+.cadastro_form__65RIu {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .cadastro_date__FFbHP{
-    margin: 10px;
-    margin-left: 10px;    
-    width: 252px;
-    height: 40px;    
-    text-align: left;
-    border-radius: 10px;
-    border:none;
-    cursor: pointer;
-  }
+.cadastro_form1__lXxG1 {
+  border-radius: 10px;
+  width: 600px;
+}
 
-  .cadastro_genero__1NTYU{
-    margin-left: 58px;    
-    margin-right: 10px;
-    width: 255px;
-    height: 40px;    
-    text-align: left;
-    border-radius: 10px;
-    border:none;
-    cursor: pointer;
-    /* appearance: none; */
-  }
+/* Input */
 
-  .cadastro_cad__40CrP{
-    box-sizing: border-box;
-    border-radius: 5px;
-    border: none;
-    background-color: white;
-    cursor: pointer;
-    width: 200px;
-    height: 40px;
-    font-size: 18px;
-    margin-left: 198px;
-    margin-top: 30px;
-    padding: 10px;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  .cadastro_cad__40CrP:visited{
-    text-decoration: none;
-  }
-  
-  .cadastro_cad__40CrP:hover{
-    background-color: #3b5d54;
-    color: white;
-  }
+.cadastro_inp__hdt3o {
+  margin: 10px;
+  text-align: left;
+  width: 572px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+}
 
-  /* footer */
+.cadastro_inp1__0CV3_ {
+  margin: 10px;
+  margin-right: 68px;
+  width: 250px;
+  height: 40px;
+  text-align: left;
+  border-radius: 10px;
+  border: none;
 
-  .cadastro_roda__wUn6e{
-    background-color:white;
-    padding: 20px; 
-    text-align: center; 
-  }
+}
 
+.cadastro_inp2__T_zYd {
+
+  width: 250px;
+  height: 40px;
+  text-align: left;
+  border-radius: 10px;
+  border: none;
+}
+
+.cadastro_date__FFbHP {
+  margin: 10px;
+  margin-left: 10px;
+  width: 252px;
+  height: 40px;
+  text-align: left;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.cadastro_genero__1NTYU {
+  margin-left: 58px;
+  margin-right: 10px;
+  width: 255px;
+  height: 40px;
+  text-align: left;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  /* appearance: none; */
+}
+
+.cadastro_cad__40CrP {
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  margin-left: 198px;
+  margin-top: 30px;
+  padding: 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cadastro_cad__40CrP:visited {
+  text-decoration: none;
+}
+
+.cadastro_cad__40CrP:hover {
+  background-color: #3b5d54;
+  color: white;
+}
+
+/* footer */
+
+.cadastro_roda__wUn6e {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+}

@@ -1,12 +1,12 @@
 'use client'
 
-import { useState } from 'react'
+import { useState } from 'react';
 
 import { IMaskInput } from "react-imask";
 
-import styles from "./cadastro.module.css"
+import styles from "./cadastro.module.css";
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 
 export default function Cadastro() {
 
@@ -88,9 +88,9 @@ export default function Cadastro() {
           <div>
 
           <IMaskInput className={styles.inp}
-            value={cpf}
-            mask="(00)00000-0000"
-            placeholder='Celular'
+            value={telefone}
+            mask="(00) 00000-0000"
+            placeholder='Numero do telefone:'
             onChange={e => setTelefone(e.target.value)}
             required
           />
@@ -105,10 +105,13 @@ export default function Cadastro() {
 
 
           <div>
-            <input className={styles.date}
-              type="date" value={dataNascimento}
-              onChange={(e) => setDataNascimento(e.target.value)}
-            />
+          <IMaskInput className={styles.date}
+            mask="00/00/0000"
+            value={dataNascimento}
+            placeholder='Data do Nascimento:'
+            onChange={(e) => setDataNascimento(e.target.value)}
+            required
+          />
 
             <select className={styles.genero} value={genero} onChange={(e) => setGenero(e.target.value)}>
               <option value="">Selecione o Gênero</option>
