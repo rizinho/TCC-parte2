@@ -4,10 +4,12 @@ import { useState } from 'react';
 
 import { IMaskInput } from "react-imask";
 
+import { useRouter } from 'next/navigation'
+
 import styles from "./cadastro.module.css";
 import Image from "next/image";
 import Link from "next/link";
-import { Router } from 'next/router';
+
 
 
 export default function Cadastro() {
@@ -31,6 +33,7 @@ export default function Cadastro() {
     }
   }
   
+  const router = useRouter()
 
   return (
 
@@ -71,7 +74,7 @@ export default function Cadastro() {
               type="email" value={email}
               placeholder='E-mail:'
               onChange={(e) => setEmail(e.target.value)}
-              required
+              required 
             />
           </div>
 
@@ -134,7 +137,7 @@ export default function Cadastro() {
             </select>
           </div>
 
-          <button className={styles.cad} type="submit" onClick={handleClick}>Cadastrar</button>
+          <button className={styles.cad} type="submit" onClick={()=>router.push('/')}>Cadastrar</button>
 
         </form>
       </div>
