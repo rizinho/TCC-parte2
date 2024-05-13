@@ -1,5 +1,6 @@
 {
-  "/CadastroCli/page": "app/CadastroCli/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
+  "/CadastroCli/page": "app/CadastroCli/page.js",
   "/Login/page": "app/Login/page.js"
 }

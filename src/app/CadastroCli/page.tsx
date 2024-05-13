@@ -1,10 +1,10 @@
 'use client'
 
-import { useState } from 'react';
+import React,{ useState } from 'react';
 
 import { IMaskInput } from "react-imask";
 
-import { useRouter } from 'next/navigation'
+import { useRouter } from 'next/navigation';
 
 import styles from "./cadastro.module.css";
 import Image from "next/image";
@@ -23,17 +23,17 @@ export default function Cadastro() {
   const [estado, setEstado] = useState('');
   const [dataNascimento, setDataNascimento] = useState('');
   const [genero, setGenero] = useState('');
-
-  function handleClick() {
-    let bodyStyle = document.body.style;
-    if (bodyStyle.backgroundColor === 'black') {
-      bodyStyle.backgroundColor = 'white';
-    } else {
-      bodyStyle.backgroundColor = 'black';
-    }
-  }
   
   const router = useRouter()
+
+  function handleSubmit(event) { 
+    valida();
+    event.preventDefault();
+}
+
+  function valida () {
+    let validado = true;
+  }
 
   return (
 
@@ -58,14 +58,14 @@ export default function Cadastro() {
       <h1 className={styles.tit}>FAÇA SEU CADASTRO</h1>
       
       <div className={styles.form}>
-        <form className={styles.form1}>
+        <form className={styles.form1} onSubmit={handleSubmit}>
 
           <div>
             <input className={styles.inp}
               type='text' value={nomeCompleto}
               placeholder='Nome Completo:'
               onChange={(e) => setNomeCompleto(e.target.value)}
-              required
+
             />
           </div>
 
@@ -74,7 +74,6 @@ export default function Cadastro() {
               type="email" value={email}
               placeholder='E-mail:'
               onChange={(e) => setEmail(e.target.value)}
-              required 
             />
           </div>
 
@@ -84,7 +83,6 @@ export default function Cadastro() {
               type="password" value={senha}
               placeholder='Senha:'
               onChange={(e) => setSenha(e.target.value)}
-              required
             />
           </div>
 
@@ -95,7 +93,6 @@ export default function Cadastro() {
             mask="000.000.000-00"
             placeholder='CPF:(Somente Números)'
             onChange={e => setCpf(e.target.value)}
-            required
           />
 
 
@@ -108,15 +105,15 @@ export default function Cadastro() {
             mask="(00) 00000-0000"
             placeholder='Numero do telefone:'
             onChange={e => setTelefone(e.target.value)}
-            required
+
           />
 
 
           </div>
 
           <div >
-            <input className={styles.inp1} type="text" value={cidade} placeholder='Cidade:' onChange={(e) => setCidade(e.target.value)} required />
-            <input className={styles.inp2} type="text" value={estado} placeholder='Estado:' onChange={(e) => setEstado(e.target.value)} required />
+            <input className={styles.inp1} type="text" value={cidade} placeholder='Cidade:' onChange={(e) => setCidade(e.target.value)}  />
+            <input className={styles.inp2} type="text" value={estado} placeholder='Estado:' onChange={(e) => setEstado(e.target.value)}  />
           </div>
 
 
@@ -126,7 +123,6 @@ export default function Cadastro() {
             value={dataNascimento}
             placeholder='Data do Nascimento:'
             onChange={(e) => setDataNascimento(e.target.value)}
-            required
           />
 
             <select className={styles.genero} value={genero} onChange={(e) => setGenero(e.target.value)}>
@@ -137,7 +133,7 @@ export default function Cadastro() {
             </select>
           </div>
 
-          <button className={styles.cad} type="submit" onClick={()=>router.push('/')}>Cadastrar</button>
+          <button className={styles.cad} type="submit">Cadastrar</button>
 
         </form>
       </div>
