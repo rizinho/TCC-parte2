@@ -25,6 +25,7 @@
   }
 }
 
+
 /*Header*/
 .header{
   display: flex;
@@ -280,4 +281,10 @@
 .butDuvidas:hover{
   background-color: #3b5d54;
   color: white;
+}
+
+.roda {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
 }

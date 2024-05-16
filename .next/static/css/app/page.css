@@ -28,6 +28,7 @@
   }
 }
 
+
 /*Header*/
 .page_header__kVzhN{
   display: flex;
@@ -283,4 +284,10 @@
 .page_butDuvidas__gvbIf:hover{
   background-color: #3b5d54;
   color: white;
+}
+
+.page_roda__5ipu9 {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
 }

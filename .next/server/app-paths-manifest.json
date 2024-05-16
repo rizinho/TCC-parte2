@@ -1,6 +1,6 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
   "/page": "app/page.js",
+  "/Login/page": "app/Login/page.js",
   "/CadastroCli/page": "app/CadastroCli/page.js",
-  "/Login/page": "app/Login/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js"
 }
