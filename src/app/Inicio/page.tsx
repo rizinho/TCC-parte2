@@ -1,20 +1,42 @@
+'use client'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
+import Image from 'next/image';
+import styles from './inicio.module.css'
 
-import styles from './inicio.module.css';
-import Image from "next/image";
+export default function inicio () { 
+		return ( 
+			<div className={styles.main}> 
+			<Carousel> 
+<div className=""></div>
+				<div className={styles.mainCarr}> 
+        <Image
+            className={styles.carr}
+            src="/carrosel1.jpg"
+            width={500}
+            height={500}
+            alt="Imagem do logo" />
+				</div> 
 
+				<div> 
+        <Image
+            className={styles.carr}
+            src="/carrosel2.jpg"
+            width={500}
+            height={500}
+            alt="Imagem do logo" />
+				</div> 
 
-export default function Inicio() {
-    return (
-        <div className={styles.main}>
-            <div className={styles.carrosel}>
-             <Image src='/carrosel1.jpg'
-                    width={500}
-                    height={500}
-                    alt='carrosel 1'/>
+				<div> 
+        <Image
+            className={styles.carr}
+            src="/carrosel3.jpg"
+            width={500}
+            height={500}
+            alt="Imagem do logo" />
+				</div>  
+			</Carousel> 
+			</div> 
+		); 
 
-            </div>
-        </div>
-    )
-
-}
+};

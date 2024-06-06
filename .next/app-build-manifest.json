@@ -12,12 +12,6 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/CadastroCli/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/CadastroCli/page.css",
-      "static/chunks/app/CadastroCli/page.js"
-    ],
     "/Inicio/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
