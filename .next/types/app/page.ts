@@ -1,4 +1,4 @@
-// File: D:\TEMP\richard\TCC-parte2\consultdoctor\TCC-parte2\src\app\page.tsx
+// File: D:\TEMP\Richard\TCC-parte2\src\app\page.tsx
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
